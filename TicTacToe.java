@@ -24,13 +24,14 @@ public class TicTacToe {
                     System.out.println(MessageFormat.format("{0}: {1}", turn, x));
                     int[] intArray = askUser(ticTacTable);
                     ticTacTable[intArray[0]][intArray[1]] = x;
-                    printBoard(ticTacTable);
+                    // printBoard(ticTacTable);
                 } else {
                     System.out.println(MessageFormat.format("{0}: {1}", turn, o));
                     int[] intArray = askUser(ticTacTable);
                     ticTacTable[intArray[0]][intArray[1]] = o;
-                    printBoard(ticTacTable);
-                }
+                    // printBoard(ticTacTable);
+                }printBoard(ticTacTable);
+
                 if (checkWin(ticTacTable) == 3) {
                     System.out.println("X wins!");
                     break;
